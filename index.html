@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Fontawesome Cdn -->
+    <script src="https://kit.fontawesome.com/1007e9949d.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .font-adlam-display {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="max-w-screen mx-auto bg-[#FFF9F4] py-3 md:py-7 border md:border-0 overflow-hidden">
+        <!-- navbar -->
+        <nav class="font-sora max-w-[358px] lg:max-w-[1320px] mx-auto flex justify-between items-center">
+            <!-- logo -->
+            <div class="flex gap-3 items-center">
+                <img src="assets/logo-header.png" alt="logo">
+                <h3 class="text-2xl hidden md:block">Browse<span class="text-yellow-300">4</span>Pets</h3>
+            </div>
+            <!-- links -->
+            <div class="hidden md:block">
+                <ul class="flex gap-8 text-xl">
+                    <li><a class="hover:text-yellow-300" href="#">Find a pet</a></li>
+                    <li><a class="hover:text-yellow-300" href="#">Breeds</a></li>
+                    <li><a class="hover:text-yellow-300" href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- buttons -->
+            <div class="hidden md:block">
+                <div class="flex items-center gap-4">
+                    <i class="fa-regular fa-bell text-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    <button class="text-xl border border-yellow-300 py-2.5 px-7 rounded-lg hover:bg-yellow-300">Login</button>
+                    <button class="text-xl bg-yellow-300 py-2.5 px-7 rounded-lg hover:bg-transparent border border-yellow-300">Resister</button>
+                </div>
+            </div>
+            <!-- menubar -->
+             <div class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
+             </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
