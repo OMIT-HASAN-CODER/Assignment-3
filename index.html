@@ -27,6 +27,26 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        @keyframes typing {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+
+            100% {
+                border-color: white;
+            }
+        }
     </style>
 </head>
 
@@ -69,7 +89,8 @@
         <div class="lg:max-w-330 mx-auto lg:relative lg:mb-35">
             <!-- banner text -->
             <div class="lg:absolute lg:top-5">
-                <h3 class="font-adlam-display text-3xl lg:text-6xl w-89.5 lg:w-170 mb-2 lg:mb-4">Pamper Your Pet,
+                <h3 class="relative font-adlam-display text-3xl lg:text-6xl w-89.5 lg:w-170 mb-2 lg:mb-4">Pamper Your
+                    Pet,
                     Because They Deserve the Bes</h3>
                 <p class="lg:text-xl text-gray-500 w-87.5 lg:w-168 mb-3 lg:mb-6">Discover a world of treats, toys, and
                     essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
@@ -90,7 +111,9 @@
         <div class="lg:max-w-330 mx-auto mb-14 lg:mb-31.5">
             <div>
                 <!-- title -->
-                <h3 class="font-adlam-display text-2xl lg:text-4xl mb-8 lg:mb-12">Browse By Categories</h3>
+                <h3 class="relative font-adlam-display text-2xl lg:text-4xl mb-8 lg:mb-12"><span class="overflow-hidden whitespace-nowrap border-r-4 border-white 
+                    inline-block animate-[typing_4s_steps(30,end)_1s_infinite,blink_0.8s_step-end_infinite]">Browse By
+                        Categories</span></h3>
             </div>
             <!-- categories container -->
             <div class="grid grid-cols-2 gap-2.5 lg:grid-cols-6 lg:gap-6 text-center">
@@ -163,7 +186,9 @@
             <div class="lg:max-w-330 mx-auto">
                 <!-- title -->
                 <div>
-                    <h3 class="font-adlam-display text-2xl lg:text-4xl mb-8 lg:mb-12">Trending Pet Products</h3>
+                    <h3 class="relative font-adlam-display text-2xl lg:text-4xl mb-8 lg:mb-12"><span
+                            class="overflow-hidden whitespace-nowrap border-r-4 border-white 
+                        inline-block animate-[typing_4s_steps(30,end)_1s_infinite,blink_0.8s_step-end_infinite]">Trending Pet Products</span></h3>
                 </div>
                 <!-- products container -->
                 <div class="flex flex-col gap-6 lg:flex-row lg:gap-6">
@@ -373,7 +398,9 @@
         <!-- price section -->
         <div class="lg:max-w-330 mx-auto mb-81.5 lg:mb-101.5">
             <!-- title -->
-            <h3 class="font-adlam-display text-2xl lg:text-4xl mb-8 lg:mb-12">Everyday low Price</h3>
+            <h3 class="relative font-adlam-display text-2xl lg:text-4xl mb-8 lg:mb-12"><span class="overflow-hidden whitespace-nowrap border-r-4 border-white 
+                inline-block animate-[typing_4s_steps(30,end)_1s_infinite,blink_0.8s_step-end_infinite]">Everyday low
+                    Price</span></h3>
             <!-- price container -->
             <div class="flex flex-col gap-6 lg:flex-row lg:gap-6.5">
                 <!-- card 1 -->
@@ -428,14 +455,16 @@
             </div>
         </div>
         <!-- footer content -->
-         <div class="relative -top-40 lg:-top-30 max-w-89.5 lg:max-w-330 mx-auto flex flex-col lg:flex-row justify-between lg:items-end">
+        <div
+            class="relative -top-40 lg:-top-30 max-w-89.5 lg:max-w-330 mx-auto flex flex-col lg:flex-row justify-between lg:items-end">
             <!-- logo -->
             <div>
                 <div class="flex gap-3 items-center mb-4 lg:mb-6">
                     <img src="assets/logo-footer.png" alt="footer logo">
                     <h3 class="text-xl lg:text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
                 </div>
-                <p class="w-88.5 mb-9 lg:mb-0 text-gray-700 lg:text-xl lg:w-106.5">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                <p class="w-88.5 mb-9 lg:mb-0 text-gray-700 lg:text-xl lg:w-106.5">Discover a world of treats, toys, and
+                    essentials handpicked for your furry friends</p>
             </div>
             <!-- links -->
             <div class="">
@@ -445,8 +474,8 @@
                     <li class="mb-9 lg:mb-0"><a class="hover:text-[#FFDC26]" href="#">Contact us</a></li>
                 </ul>
             </div>
-             <!-- socials -->
-              <div>
+            <!-- socials -->
+            <div>
                 <h3 class="text-sm lg:text-base lg:font-medium">Follow Us</h3>
                 <div class="flex gap-5">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -454,8 +483,8 @@
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-              </div>
-         </div>
+            </div>
+        </div>
     </footer>
 </body>
 
